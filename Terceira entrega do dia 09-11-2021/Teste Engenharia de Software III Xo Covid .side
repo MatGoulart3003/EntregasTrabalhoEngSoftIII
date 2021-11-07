@@ -1,0 +1,69 @@
+{
+  "id": "b4ed68d0-e41f-49c9-949f-f43ba70d30d5",
+  "version": "2.0",
+  "name": "Teste Engenharia de Software III",
+  "url": "https://marciofaria9.github.io/tp4-trab1/index.html",
+  "tests": [{
+    "id": "3ac5ae42-0c19-403a-9002-6b57f1cfe76a",
+    "name": "Teste Engenharia de Software III",
+    "commands": [{
+      "id": "43076401-ca06-4971-a028-62e6693ad269",
+      "comment": "",
+      "command": "open",
+      "target": "https://marciofaria9.github.io/tp4-trab1/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5ebf0a8-a522-4eb3-9592-28dcbe7a89d4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "580x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9a2572b-c7b1-4810-84fe-e43d5d016c95",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alcool em gel",
+      "targets": [
+        ["linkText=Alcool em gel", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Alcool em gel')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'categoria/alcool-em-gel.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alcool em gel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "716755a8-5edf-4426-998d-b85ba23e1db6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.itenProd:nth-child(5) .itenDiv:nth-child(4)",
+      "targets": [
+        ["css=.itenProd:nth-child(5) .itenDiv:nth-child(4)", "css:finder"],
+        ["xpath=//div[5]/a/div[3]", "xpath:position"]
+      ],
+      "value": "R$ 11,60"
+    }, {
+      "id": "35a1efea-ee7c-4ea0-b341-c543d152cc62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.itenProd:nth-child(5) .imgDivDentro",
+      "targets": [
+        ["css=.itenProd:nth-child(5) .imgDivDentro", "css:finder"],
+        ["xpath=//div[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e96352d4-1f5a-4997-b5a3-08007b86aa9c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": [],
+  "plugins": []
+}
